@@ -1,0 +1,11 @@
+{
+  "name": "shahzaib",
+  "version": "1.0.0",
+  "description": "hello my name is shahzaib ali",
+  "main": "ServerCreate.js",
+  "scripts": {
+    "test": "test server"
+  },
+  "author": "",
+  "license": "ISC"
+}
