@@ -4,14 +4,34 @@ const app = express();
 
 app.get('', (req, res) => {
     console.log("data is sent by ", req.query.name)
-    res.send('hello this is responed ')
+    res.send(' <h1> hello this is responed </h1>')
 });
 
 app.get('/about', (req, res) => {
-    res.send('hello this is  About page ')
+    res.send(`
+        <input type="text" placeholder="UserName" value="${req.query.name}"/>
+        <button>Submit</button>
+        `)
 });
 app.get('/help', (req, res) => {
-    res.send('welcome this is responed Help ')
+    res.send([
+        {
+            name:'shahzaib',
+            email:'shahzaib@gmail.com'
+        },
+        {
+            name:'shahzaib',
+            email:'shahzaib@gmail.com'
+        },
+        {
+            name:'shahzaib',
+            email:'shahzaib@gmail.com'
+        },
+        {
+            name:'shahzaib',
+            email:'shahzaib@gmail.com'
+        }
+    ])
 });
 
 app.listen(3000)
