@@ -3,6 +3,7 @@ const app = express();
 
 
 app.get('', (req, res) => {
+    console.log("data is sent by ", req.query.name)
     res.send('hello this is responed ')
 });
 
